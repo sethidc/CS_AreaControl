@@ -1,0 +1,60 @@
+// This file contains all the questions for the quiz.
+// Separating questions into their own file makes the game easier to update and manage.
+
+const questions = [
+    // --- Existing KS2 & KS3 Questions ---
+    { text: "What is an algorithm?", options: ["A programming language", "A sequence of instructions to solve a problem", "A computer", "An image file type"], correctAnswer: "A sequence of instructions to solve a problem", level: "KS2" },
+    { text: "What does 'debugging' mean in programming?", options: ["Making a program faster", "Finding and fixing errors in a program", "Writing comments in code", "Designing a program's look"], correctAnswer: "Finding and fixing errors in a program", level: "KS2" },
+    { text: "In programming, what is a variable used for?", options: ["To make sounds", "To draw pictures", "To store information that can change", "To stop the program"], correctAnswer: "To store information that can change", level: "KS2" },
+    { text: "What is the Internet?", options: ["A single computer", "A type of software", "A global network of connected computers", "A computer game"], correctAnswer: "A global network of connected computers", level: "KS2" },
+    { text: "Which of these is an example of an input device?", options: ["Monitor", "Printer", "Mouse", "Speakers"], correctAnswer: "Mouse", level: "KS2" },
+    { text: "What is a sequence in programming?", options: ["Repeating instructions", "Making decisions", "The order in which instructions are carried out", "Storing data"], correctAnswer: "The order in which instructions are carried out", level: "KS2" },
+    { text: "If you get an email from someone you don't know, what should you do?", options: ["Open it immediately", "Delete it without opening", "Reply and ask who they are", "Forward it to your friends"], correctAnswer: "Delete it without opening", level: "KS2" },
+    { text: "What does it mean to be a good 'digital citizen'?", options: ["Owning many gadgets", "Using the internet quickly", "Being safe and respectful online", "Only playing online games"], correctAnswer: "Being safe and respectful online", level: "KS2" },
+    { text: "True or False: It is safe to share your password with your best friend.", options: ["True", "False"], correctAnswer: "False", level: "KS2" },
+    { text: "What is a 'program' in computing?", options: ["A TV show about computers", "A set of instructions a computer follows", "A type of computer hardware", "A computer screen"], correctAnswer: "A set of instructions a computer follows", level: "KS2" },
+    { text: "If a website asks for your home address, you should...", options: ["Type it in", "Ask a trusted adult first", "Make one up", "Close the website"], correctAnswer: "Ask a trusted adult first", level: "KS2" },
+    { text: "Which part of a computer is like its brain?", options: ["The screen", "The keyboard", "The CPU", "The mouse"], correctAnswer: "The CPU", level: "KS2" },
+    { text: "What does 'repetition' mean in a program?", options: ["The program stops", "The program makes a choice", "The program does something over and over", "The program shows a picture"], correctAnswer: "The program does something over and over", level: "KS2" },
+    { text: "What is 'cyberbullying'?", options: ["A fun online game", "Being unkind to someone online", "Learning about computers", "A type of computer virus"], correctAnswer: "Being unkind to someone online", level: "KS2" },
+    { text: "An output device is something that...", options: ["Puts information into a computer", "Gives information out from a computer", "Stores information", "Connects to the internet"], correctAnswer: "Gives information out from a computer", level: "KS2" },
+    { text: "Which of these is an example of an output device?", options: ["Keyboard", "Webcam", "Scanner", "Printer"], correctAnswer: "Printer", level: "KS2" },
+    { text: "True or False: Everything you read on the internet is true.", options: ["True", "False"], correctAnswer: "False", level: "KS2" },
+    { text: "What is a computer network?", options: ["A fishing net for computers", "A group of connected computers that can share things", "A single, powerful computer", "A TV show about the internet"], correctAnswer: "A group of connected computers that can share things", level: "KS2" },
+    { text: "When you 'decompose' a problem, you...", options: ["Break it into smaller, easier parts", "Throw it away", "Ask a computer to solve it", "Make it more difficult"], correctAnswer: "Break it into smaller, easier parts", level: "KS2" },
+    { text: "Why is it important to use different passwords for different websites?", options: ["It's easier to remember", "It's fun to make new ones", "If one is stolen, the others are still safe", "It makes websites load faster"], correctAnswer: "If one is stolen, the others are still safe", level: "KS2" },
+    { text: "What does 'digital content' mean?", options: ["A happy feeling", "Things you can find on a computer, like pictures or videos", "The case of the computer", "A library book"], correctAnswer: "Things you can find on a computer, like pictures or videos", level: "KS2" },
+    { text: "In programming, what is an 'event'?", options: ["A party for computers", "Something that happens that a program can react to", "An error in the code", "The end of the program"], correctAnswer: "Something that happens that a program can react to", level: "KS2" },
+    { text: "What does 'URL' stand for?", options: ["Ultimate Robot Link", "Underground Railway Line", "Uniform Resource Locator", "Unicorns Rule Lots"], correctAnswer: "Uniform Resource Locator", level: "KS2" },
+    { text: "What is a 'browser' used for?", options: ["To look at websites on the internet", "To write computer code", "To edit photos", "To play music"], correctAnswer: "To look at websites on the internet", level: "KS2" },
+    { text: "Which of these helps a computer store information when it is turned off?", options: ["The screen", "The hard drive", "The speakers", "The CPU"], correctAnswer: "The hard drive", level: "KS2" },
+    
+    // --- THEORY FOCUSED QUESTIONS (HARDWARE, NETWORKS, PROGRAMMING) ---
+    { text: "What does RAM stand for?", options: ["Read Access Memory", "Random Access Memory", "Remote Access Memory", "Random Automated Module"], correctAnswer: "Random Access Memory", level: "KS3" },
+    { text: "What is the smallest unit of data in a computer?", options: ["Byte", "Bit", "Kilobyte", "Integer"], correctAnswer: "Bit", level: "KS3" },
+    { text: "What is binary code primarily composed of?", options: ["Letters and numbers", "0s and 1s", "Special symbols", "Pictures"], correctAnswer: "0s and 1s", level: "KS3" },
+    { text: "What is the main function of a CPU (Central Processing Unit)?", options: ["Store files permanently", "Display images on the screen", "Execute program instructions", "Connect to the internet"], correctAnswer: "Execute program instructions", level: "KS3" },
+    { text: "Which statement best describes the difference between RAM and ROM?", options: ["RAM is for long-term storage, ROM is for short-term", "RAM is volatile (temporary), ROM is non-volatile (permanent)", "Both are used for the same purpose", "ROM is faster than RAM"], correctAnswer: "RAM is volatile (temporary), ROM is non-volatile (permanent)", level: "KS3" },
+    
+    // --- NEW THEORY QUESTIONS ---
+    { text: "What is the main circuit board that connects all computer components together?", options: ["The Power Supply", "The Video Card", "The Motherboard", "The Sound Card"], correctAnswer: "The Motherboard", level: "KS3" },
+    { text: "What does a router do in a network?", options: ["It creates documents", "It directs data between networks", "It displays images", "It protects from viruses"], correctAnswer: "It directs data between networks", level: "KS3" },
+    { text: "Which is generally faster for storing and reading data?", options: ["HDD (Hard Disk Drive)", "SSD (Solid State Drive)", "CD-ROM", "USB Stick"], correctAnswer: "SSD (Solid State Drive)", level: "KS3" },
+    { text: "True or False: An Ethernet cable provides a wireless internet connection.", options: ["True", "False"], correctAnswer: "False", level: "KS2" },
+    { text: "What does GPU stand for?", options: ["General Processing Unit", "Graphics Processing Unit", "Gaming Power Unit", "Global Positioning Unit"], correctAnswer: "Graphics Processing Unit", level: "KS3" },
+    { text: "A network covering a single building, like a school, is called a...?", options: ["WAN", "The Internet", "LAN", "PAN"], correctAnswer: "LAN", level: "KS3" },
+    { text: "What is the unique address given to every device on the internet called?", options: ["A Postcode", "A Username", "An Email Address", "An IP Address"], correctAnswer: "An IP Address", level: "KS3" },
+    { text: "Data is sent over the internet in small pieces called...?", options: ["Chunks", "Bits", "Packets", "Blobs"], correctAnswer: "Packets", level: "KS3" },
+    { text: "A powerful computer that provides services to other computers on a network is called a...?", options: ["Client", "Desktop", "Laptop", "Server"], correctAnswer: "Server", level: "KS3" },
+    { text: "What does LAN stand for?", options: ["Long Area Network", "Logical Access Network", "Local Area Network", "Large Area Net"], correctAnswer: "Local Area Network", level: "KS3" },
+    { text: "In programming, what is an 'IF' statement used for?", options: ["Repetition", "Making decisions", "Storing data", "Ending the program"], correctAnswer: "Making decisions", level: "KS3" },
+    { text: "What do we call the 'grammar rules' of a programming language?", options: ["Comments", "Syntax", "Variables", "Logic"], correctAnswer: "Syntax", level: "KS3" },
+    { text: "A named block of code that performs a specific task and can be run multiple times is a...?", options: ["Variable", "Loop", "Function", "Comment"], correctAnswer: "Function", level: "KS3" },
+    { text: "Is Python considered a high-level or a low-level language?", options: ["High-level", "Low-level", "It's both", "It's neither"], correctAnswer: "High-level", level: "KS3" },
+    { text: "A bug that doesn't crash the program, but gives the wrong result is a...?", options: ["Syntax Error", "Crash Error", "Logic Error", "Hardware Error"], correctAnswer: "Logic Error", level: "KS3" },
+    { text: "The 'ELSE' part of an IF...ELSE statement runs when the condition is...?", options: ["True", "False", "Always", "Never"], correctAnswer: "False", level: "KS3" },
+    { text: "In programming, what is a 'string'?", options: ["A piece of thread", "A sequence of characters/text", "A type of number", "A true or false value"], correctAnswer: "A sequence of characters/text", level: "KS3" },
+    { text: "Which symbol is most commonly used to assign a value to a variable?", options: ["+", "==", "=", "?"], correctAnswer: "=", level: "KS2" },
+    { text: "True or False: A 'while' loop will continue running as long as its condition is true.", options: ["True", "False"], correctAnswer: "True", level: "KS3" },
+    { text: "What is the result of `5 + 3 * 2` according to the order of operations?", options: ["16", "11", "13", "10"], correctAnswer: "11", level: "KS3" }
+];
